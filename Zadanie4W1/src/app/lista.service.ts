@@ -9,7 +9,7 @@ import { KsiazkaBody } from '../models/ksiazka-body';
 })
 export class ListaService {
 
-  private apiUrl = 'https://localhost:5015/api/ksiazki';
+  private apiUrl = 'http://localhost:5015/api/ksiazki';
   constructor(private http: HttpClient) {}
 
   get(): Observable<Ksiazka[]> {
